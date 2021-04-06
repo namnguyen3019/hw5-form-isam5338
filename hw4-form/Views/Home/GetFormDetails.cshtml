@@ -1,0 +1,20 @@
+﻿@model CustomerForm;
+@{
+
+}
+
+<div>
+    You successfully submited the form as below
+    <h3>FirstName: @Model.FirstName</h3>
+    <h3>Last Name: @Model.LastName</h3>
+    <h3>Street Address: @Model.StreetAddress</h3>
+    <h3>Zip Code: @Model.ZipCode</h3>
+    <h3>City: @Model.City</h3>
+    <h3>State: @Model.State</h3>
+    @if(Model.FreeSample) {
+        <p> Free Sample: Yes</p>
+    } else
+    {
+       <p> Free Sample: No</p>
+    }
+</div>
